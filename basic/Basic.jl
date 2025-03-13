@@ -29,7 +29,7 @@ converges to
 """
 
 # ╔═╡ b2d792c2-7f73-11ea-0c65-a5042701e9f3
-sqrt(sum(seq) * 6.0)
+sqrt(-sum(seq) * 6.0)
 
 # ╔═╡ b2d79330-7f73-11ea-0d1c-a9aad1efaae1
 n = 1:100000
