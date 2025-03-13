@@ -539,7 +539,7 @@ The examples above use `Resource` to make media from a URL available inside Mark
 html"<span style='font-family: cursive; color: purple;'>I really hope that this works</span>"
 
 # ╔═╡ f809110c-cc55-11ea-1551-e138c28d5d82
-md"""Hello I am a dog $(LocalResource("C:\\Users\\fons\\Pictures\\hannes.jpg"))"""
+# md"""Hello I am a dog $(LocalResource("C:\\Users\\fons\\Pictures\\hannes.jpg"))"""
 
 # ╔═╡ 1c930364-cc58-11ea-36c8-0ddf7c4700cd
 md""" $(html"<span style='font-family: cursive; color: purple;'>OOPS</span>"), it didn't!
