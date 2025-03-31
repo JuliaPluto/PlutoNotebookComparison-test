@@ -8,7 +8,7 @@
 #> title = "Interactivity"
 #> tags = ["basic", "interactivity", "classic"]
 #> license = "Unlicense"
-#> description = "Sliders, buttons, dropdowns, and more using PlutoUI.jl!"
+#> description = "Sliders, buttons, dropdowns, and more using PlutoUIBZZZZZZ.jl!"
 #> 
 #>     [[frontmatter.author]]
 #>     name = "Pluto.jl"
@@ -28,7 +28,7 @@ macro bind(def, element)
 end
 
 # ╔═╡ bc532cd2-c75b-11ea-313f-8b5e771c9227
-md"""# PlutoUI.jl
+md"""# PlutoUIBZZZZZZ.jl
 
 Pluto notebooks can use **`@bind`** to add _interactivity_ to your notebook. It's a simple concept - it uses the same reactivity that you have when editing code, except now you use sliders and buttons, instead of editing code.
 """
@@ -39,11 +39,11 @@ Pluto notebooks can use **`@bind`** to add _interactivity_ to your notebook. It'
 # ╔═╡ 051f31fc-cc63-11ea-1e2c-0704285ea6a9
 md"""
 #### To use it in other notebooks
-Simply import the `PlutoUI` package, and Pluto's built-in package manager takes care of the rest!
+Simply import the `PlutoUIBZZZZZZ` package, and Pluto's built-in package manager takes care of the rest!
 """
 
 # ╔═╡ 071d9ca5-9b42-4583-ad96-a48f93453a0e
-using PlutoUI
+using PlutoUIBZZZZZZ
 
 # ╔═╡ deadce6b-4abc-42b0-9997-07be8637ee94
 TableOfContents()
@@ -400,7 +400,7 @@ Using `combine`, you can create a single input out of multiple existing ones! In
 """
 
 # ╔═╡ 621f2e82-5ab4-4ab9-a0ff-fb1cc1b41295
-import PlutoUI: combine
+import PlutoUIBZZZZZZ: combine
 
 # ╔═╡ a4837897-caae-447a-8db9-7775e7a4d0c8
 
@@ -449,9 +449,9 @@ md"""# Loading resources
 
 Notebooks use data from different places. For example, you use [`Base.read`](https://docs.julialang.org/en/v1/base/io-network/#:~:text=read(filename%3A%3AAbstractString%2C%20String)) to access local data (files) inside your Julia code, and [`Downloads.jl`](https://github.com/JuliaLang/Downloads.jl) for remote data (interwebs). 
 
-`PlutoUI` helps you communicate with the person reading the notebook!
-- To get **remote media** (URL) inside your **Markdown text**, use `PlutoUI.Resource`.
-- To get **local media** (file) inside your **Markdown text**, use `PlutoUI.LocalResource`.
+`PlutoUIBZZZZZZ` helps you communicate with the person reading the notebook!
+- To get **remote media** (URL) inside your **Markdown text**, use `PlutoUIBZZZZZZ.Resource`.
+- To get **local media** (file) inside your **Markdown text**, use `PlutoUIBZZZZZZ.LocalResource`.
 
 (With _media_, we mean **images**, video and audio.)
 
@@ -464,13 +464,13 @@ Notebooks use data from different places. For example, you use [`Base.read`](htt
 # ╔═╡ 87d088d0-cc54-11ea-02c6-bd673b95b9d3
 md"""## Resource
 
-If you just want to show **images inside Markdown**, you can use the built-in syntax (without `PlutoUI`):
+If you just want to show **images inside Markdown**, you can use the built-in syntax (without `PlutoUIBZZZZZZ`):
 
 ```
 md"Here is a _dog_: ![](https://fonsp.com/img/doggoSmall.jpg)"
 ```
 
-`PlutoUI.Resource` has some extra features:
+`PlutoUIBZZZZZZ.Resource` has some extra features:
 - specify **image dimensions** and spacing
 - support for videos
 - support for audio"""
@@ -560,12 +560,12 @@ Here are **two tips** for getting local images to work correctly:
 
 1. Go to [imgur.com](https://imgur.com) and drag&drop the image to the page. Right click on the image, and select "Copy image location". You can now use the image like so: 
 
-   ```PlutoUI.Resource("https://i.imgur.com/SAzsMMA.jpg")```
+   ```PlutoUIBZZZZZZ.Resource("https://i.imgur.com/SAzsMMA.jpg")```
 
 
 2. If your notebook is part of a git repository, place the image in the repository and use a relative path: 
    
-    ```PlutoUI.LocalResource("../images/cat.jpg")```
+    ```PlutoUIBZZZZZZ.LocalResource("../images/cat.jpg")```
 
 
 """
@@ -586,7 +586,7 @@ Putting images online might be a hassle, but once it works, it will work everywh
 space
 
 # ╔═╡ a245dddc-cc59-11ea-3e1d-1763673ff706
-md"# PlutoUI without Pluto
+md"# PlutoUIBZZZZZZ without Pluto
 
 Huh?
 
@@ -596,7 +596,7 @@ $ julia wow.jl
 ```
 will run the notebook just fine. 
 
-When you use `@bind`, your notebook can still run without Pluto! Sort of. Normally, all bound variables are assigned the value `missing` when you run it elsewhere. However, the `PlutoUI` types have all been configured to assign a more sensible default value.
+When you use `@bind`, your notebook can still run without Pluto! Sort of. Normally, all bound variables are assigned the value `missing` when you run it elsewhere. However, the `PlutoUIBZZZZZZ` types have all been configured to assign a more sensible default value.
 
 For example, if your notebook contains
 ```julia
@@ -609,7 +609,7 @@ and you run it without Pluto, then this statement simply assigns `x = 10`.
 
 
 # ╔═╡ 0da7bc30-cc64-11ea-1dde-2b7f2dd76036
-md"`Pluto` and `PlutoUI` work independently of each other! In fact, _you_ could write a package with fun input elements, or add `@bind`able values to existing packages."
+md"`Pluto` and `PlutoUIBZZZZZZ` work independently of each other! In fact, _you_ could write a package with fun input elements, or add `@bind`able values to existing packages."
 
 # ╔═╡ d163f434-cc5a-11ea-19e9-9319ba994efa
 space
@@ -623,10 +623,10 @@ space = html"<br><br><br>"
 # ╔═╡ 00000000-0000-0000-0000-000000000001
 PLUTO_PROJECT_TOML_CONTENTS = """
 [deps]
-PlutoUI = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
+PlutoUIBZZZZZZ = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
 
 [compat]
-PlutoUI = "~0.7.52"
+PlutoUIBZZZZZZ = "~0.7.52"
 """
 
 # ╔═╡ 00000000-0000-0000-0000-000000000002
@@ -798,7 +798,7 @@ version = "1.11.0"
     [Pkg.weakdeps]
     REPL = "3fa0cd96-eef1-5676-8a61-b3b8758bbffb"
 
-[[PlutoUI]]
+[[PlutoUIBZZZZZZ]]
 deps = ["AbstractPlutoDingetjes", "Base64", "ColorTypes", "Dates", "FixedPointNumbers", "Hyperscript", "HypertextLiteral", "IOCapture", "InteractiveUtils", "JSON", "Logging", "MIMEs", "Markdown", "Random", "Reexport", "URIs", "UUIDs"]
 git-tree-sha1 = "eba4810d5e6a01f612b948c9fa94f905b49087b0"
 uuid = "7f904dfe-b85e-4ff6-b463-dae2292396a8"
